@@ -4,6 +4,6 @@ def same_element(lst1,lst2):
             if i==j:
                 return True
     
-a=[1,2,3,4,5]
-b=[3,4,5,6,7]
+a=[1,2,3,4,5,"ty"]
+b=[6,7,"ty"]
 print(same_element(a,b))
