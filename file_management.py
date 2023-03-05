@@ -1,0 +1,30 @@
+file=open("python.txt","w")
+file.write("This is file management using python")
+file.close()
+print("File written succesfully")
+print("*"*50)
+
+file=open("python.txt","r")
+print(file.read())
+file.close()
+print("*"*50)
+
+file=open("python.txt","a")
+file.write("\n File got appended now")
+file.close()
+print("File appended successfully")
+print("*"*50)
+
+file=open("python.txt","r")
+print(file.read())
+file.close()
+print("*"*50)
+
+
+file=open("new.txt","w+")
+file.write("This is w+ mode for file read/write operations.")
+print("Current Cursor position :",file.tell())
+file.seek(0)
+print(file.read())
+file.close()
+print("*"*50)
