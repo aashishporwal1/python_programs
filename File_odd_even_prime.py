@@ -11,11 +11,13 @@ even=open("even.txt","w")
 odd=open("odd.txt","w")
 prime=open("prime.txt","w")
 l=data.read().split(",")[:-1]
+
 for i in l:
     if int(i)%2==0:
         even.write(i+",")
     else:
         odd.write(i+",")
+
 for i in l:
     if int(i)%2!=0:
         for j in range(3,int(int(i)/2)+1,2):
