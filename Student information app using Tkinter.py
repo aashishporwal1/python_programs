@@ -7,7 +7,8 @@ def create_conn():
             host="localhost",
             username="root",
             password="",
-            database="python"
+            database="python",
+            port="3307"
         )
 def insert_data():
     if e_fname.get()=="" or e_lname.get()=="" or e_email.get()=="" or e_mobile.get()=="":
