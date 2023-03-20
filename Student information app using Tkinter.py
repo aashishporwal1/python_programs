@@ -122,13 +122,13 @@ e_email=Entry(root)
 e_email.place(x=200,y=200)
 
 e_mobile=Entry(root)
-e_mobile.place(x=200,y=250)
+e_mobileplace(x=200,y=250)
 
 insert=Button(root,text="INSERT",font=("Arial",12),bg="yellow",fg="black",command=insert_data)
 insert.place(x=50,y=300)
 
 insert=Button(root,text="SEARCH",font=("Arial",12),bg="yellow",fg="black",command=search_data)
-insert.place(x=121,y=300)
+insert.place(x=121y=300)
 
 insert=Button(root,text="UPDATE",font=("Arial",12),bg="yellow",fg="black",command=update_data)
 insert.place(x=203,y=300)
