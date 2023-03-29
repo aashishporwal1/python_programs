@@ -17,6 +17,7 @@ class User(models.Model):
 	mobile=models.PositiveIntegerField()
 	address=models.TextField()
 	password=models.CharField(max_length=100)
+	profile_pic=models.ImageField(default="",upload_to="profile_pic/")
 
 	def __str__(self):
 		return self.fname+" "+self.lname
