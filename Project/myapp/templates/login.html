@@ -1,0 +1,63 @@
+{% extends 'header.html' %}
+<!-- FOR LOADING THE STATIC FOLDER -->
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+
+</head>
+
+<body>
+    
+        <!-- ****** Checkout Area Start ****** -->
+        <div class="checkout_area section_padding_100">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="checkout_details_area mt-50 clearfix">
+
+                            <div class="cart-page-heading">
+                                <h5>Login</h5>
+                                {% if msg %}
+                                    <b style="color: red;">{{msg}}</b>
+                                {% endif %}
+                                
+                            </div>
+
+                            <form action="{% url 'login' %}" method="post" >
+                                <div class="row">
+                                    {% csrf_token %}
+                                    
+                                    <div class="col-12 mb-3">
+                                        <label for="email">Email <span>*</span></label>
+                                        <input type="text" class="form-control" id="email" name='email' value="">
+                                    </div>
+                                    
+                                    <div class="col-12 mb-3">
+                                        <label for="password">Password<span>*</span></label>
+                                        <input type="password" class="form-control mb-3" id="password" name="password" value="">
+                                    </div>
+                                    
+                                    <div class="col-12 mb-3">
+                                        <input type="submit" class="btn btn-primary" value="Login">
+                                    </div>
+
+                                    
+
+                                    
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+</body>
+
+</html>
+
+{% endblock %}
