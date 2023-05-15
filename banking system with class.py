@@ -3,7 +3,8 @@ class Bank:
         self.cname=cname
         self.acno=acno
         self.balance=balance
-        print("Hello ",self.cname,"Your Account",self.acno,"Is Opened with Rs.",self.balance)
+        print("Hello ",self.cname,"Your Account",self.acno,
+              "Is Opened with Rs.",self.balance)
         
     def deposit(self,amount):
         self.balance+=amount

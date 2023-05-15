@@ -1,2 +1,2 @@
-for i in range(1,10):
-    print(" "*(9-i)," *"*i)
+for i in range(6):
+    print(" "*(6-i)," *"*i)
