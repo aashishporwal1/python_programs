@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+from decouple import config
 
 
 
@@ -24,10 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-64f+5$m7^s*5fjr4f2dp2lb=qrojl9%e@!fm09e6nvie8jc_e6'
-
+SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG' , cast=bool)
 
 ALLOWED_HOSTS = []
 
@@ -132,3 +132,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #For uploading profile photo
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+#Enter your stripe publishable key and secret key here
+STRIPE_PUBLIC_KEY = config('STRIPE_PUBLIC_KEY')
+STRIPE_PRIVATE_KEY = config('STRIPE_PRIVATE_KEY')
+
+# Step for Sending OTP on email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')

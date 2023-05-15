@@ -35,6 +35,7 @@
                                     <div class="col-12 mb-3">
                                         <label for="email">Email <span>*</span></label>
                                         <input type="text" class="form-control" id="email" name='email' value="">
+                                        <span id="email_error"></span>
                                     </div>
                                     
                                     <div class="col-12 mb-3">
@@ -44,6 +45,8 @@
                                     
                                     <div class="col-12 mb-3">
                                         <input type="submit" class="btn btn-primary" value="Login">
+                                        &nbsp;
+                                        <a href="{% url 'forgot-password' %}"><input type="button" value="Forgot Password" class="btn btn-primary"></a>
                                     </div>
 
                                     
@@ -57,6 +60,31 @@
 
 
 </body>
+
+
+<script>
+    $("#email").change(function(){
+        var email=$(this).val();
+
+        $.ajax({
+            /* Put this URL in your urls.py file */
+            url: '/ajax/validate_email/',
+            data: {
+                'email' : email
+            },
+            dataType: 'json',
+            success: function(data){
+                if(!data.is_taken){
+                    document.getElementById("email_error").innerHTML="This Email is Not Registered"
+                }else{
+                    document.getElementById("email_error").innerHTML="";
+                }
+            }
+        });
+    });
+
+</script>
+
 
 </html>
 
