@@ -1,0 +1,18 @@
+	 Welcome to Aashish's Retail 
+
+ Bill No. : 6133
+ Customer Name : Aashish
+ Phone No. : 1452452455
+=====================================
+ Products		Qty	     Price
+=====================================
+ Face Wash		4	      600
+ Sugar		4	      180
+ Biscuit		8	      240
+-------------------------------------
+ Cosmetics Tax 			  Rs. 30.0
+ Groceries Tax 			  Rs. 18.0
+ Others Tax 			  Rs. 24.0
+-------------------------------------
+ Total Bill 			  Rs. 1092.0
+-------------------------------------
