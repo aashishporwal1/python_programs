@@ -1,0 +1,17 @@
+	 Welcome to Aashish's Retail 
+
+ Bill No. : 3101
+ Customer Name : aashish
+ Phone No. : 98798479583
+=====================================
+ Products		Qty	     Price
+=====================================
+ Face Wash		1	      150
+ Sugar		5	      225
+ Coke		2	      100
+-------------------------------------
+ Cosmetics Tax 			  Rs. 7.5
+ Groceries Tax 			  Rs. 22.5
+ Others Tax 			  Rs. 10.0
+-------------------------------------
+ Total Bill 			  Rs. 515.0
