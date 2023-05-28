@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 	 Welcome to Aashish's Retail 
 
  Bill No. : 5100
@@ -14,3 +15,21 @@
 -------------------------------------
  Total Bill 			  Rs. 457.5
 -------------------------------------
+=======
+	 Welcome to Aashish's Retail 
+
+ Bill No. : 5100
+ Customer Name : ap
+ Phone No. : 5454554
+=====================================
+ Products		Qty	     Price
+=====================================
+ Face Cream		2	      200
+ Sugar		5	      225
+-------------------------------------
+ Cosmetics Tax 			  Rs. 10.0
+ Groceries Tax 			  Rs. 22.5
+-------------------------------------
+ Total Bill 			  Rs. 457.5
+-------------------------------------
+>>>>>>> f7b24bcbe34d565b8f5e12538a695113d02f4968
