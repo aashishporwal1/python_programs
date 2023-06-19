@@ -383,7 +383,8 @@ def checkout(request):
 
 #Payment Integration
 stripe.api_key = settings.STRIPE_PRIVATE_KEY
-YOUR_DOMAIN = 'http://localhost:8000'
+#Enter your new domain name after hosting
+YOUR_DOMAIN = 'http://aashishporwal1.pythonanywhere.com'
 
 @csrf_exempt
 def create_checkout_session(request):
@@ -395,7 +396,7 @@ def create_checkout_session(request):
 			'price_data': {
 				'currency': 'inr',
 				'product_data': {
-					'name': 'Intro to Django Course',
+					'name': 'Your Total Payment',
 					},
 				'unit_amount': final_amount,
 				},

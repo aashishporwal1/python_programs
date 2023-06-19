@@ -1,7 +1,8 @@
 def fibonacci(n):
     a,b=0,1
+    print(a)
     while b<n:
-        print(b,end=" ")
+        print(b)
         a,b=b,a+b
     print()
 fibonacci(1000)
